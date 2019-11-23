@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8" />
+    <title>个人中心</title>
+    <script type="text/javascript">
+		function changePersonalPageColor(){
+			document.getElementById("personalPageLink").style.backgroundColor = 'white';
+		}
+	</script>
+    <link rel="stylesheet" type="text/css" href="../static/css/personalPage.css"/>
+</head>
+
+<body>
+    <div id="container">
+        <div class="left-nav">
+            {{template "./leftNav.html" .}}
+        </div>
+        <script type="text/javascript">
+            document.getElementById("personalPageLink").style.backgroundColor = 'white';
+        </script>
+        <!--右边界面背景色的设置在css中mainInterface里-->
+        <div class="mainInterface">
+            <div class="money">
+                <img src="../static/img/kcoin-project-list-half-icon.png" width="150" height="150" style="position: absolute;"/>
+                Kcoin<br />
+                100,000
+            </div>
+            <div class="record">
+                Kcoin记录
+            </div>
+            <div class="token">
+                项目token记录
+            </div>
+        </div>
+    </div>
+</body>

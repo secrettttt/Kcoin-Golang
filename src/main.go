@@ -1,11 +1,10 @@
 package main
 
 import (
-	_ "HelloWebProject/routers"
-	"github.com/astaxie/beego"
+_ "Kcoin-Golang/src/routers"
+"github.com/astaxie/beego"
 )
 
 func main() {
 	beego.Run()
 }
-
